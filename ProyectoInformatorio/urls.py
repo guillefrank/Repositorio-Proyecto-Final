@@ -20,7 +20,7 @@ from usuario import views as usuario_views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('juego/', include('juego.urls')),
-    path('registrarse', usuario_views.registro),
+    path('registro', usuario_views.registro),
     path('iniciosesion', usuario_views.login),
     path('logout', usuario_views.logout),
     path('', usuario_views.home),
